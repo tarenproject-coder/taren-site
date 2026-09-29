@@ -36,7 +36,7 @@ body{
 }
 .hero-image{
   position:absolute;inset:0;
-  background:url('portada-taren.jpg') center 55%/cover no-repeat;
+  background:url('portada-taren.jpg.png') center 55%/cover no-repeat;
 }
 .hero-shade{
   position:absolute;inset:0;
