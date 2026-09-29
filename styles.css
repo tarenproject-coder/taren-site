@@ -36,7 +36,7 @@ body{
 }
 .hero-image{
   position:absolute;inset:0;
-  background:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2200&q=90') center 55%/cover no-repeat;
+  background:url('portada-taren.jpg') center 55%/cover no-repeat;
 }
 .hero-shade{
   position:absolute;inset:0;
