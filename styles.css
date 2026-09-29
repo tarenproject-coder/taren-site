@@ -123,10 +123,10 @@ body{
   font-size:.75rem;
   color:var(--muted);
 }
-.p1{background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=88')}
-.p2{background-image:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=88')}
-.p3{background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=88')}
-.p4{background-image:url('https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=2200&q=88')}
+.p1{background-image:url('proyecto-1.jpg.png')}
+.p2{background-image:url('proyecto-2.jpg.png')}
+.p3{background-image:url('proyecto-3.jpg.png')}
+.p4{background-image:url('proyecto-4.jpg.png')}
 .studio{
   display:grid;
   grid-template-columns:1.1fr 1fr;
