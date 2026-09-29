@@ -87,8 +87,8 @@ body{
   font-size:1rem;
 }
 .studio-copy h2{
-    font-size:clamp(2.2rem,3.4vw,4rem);
-    line-height:1.02;
+    font-size:clamp(2rem,3vw,3.5rem);
+    line-height:1.05;
 }
 .section-title{
   margin-bottom:48px;
