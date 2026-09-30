@@ -123,17 +123,17 @@ body{
 }
 /* NUESTRO TRABAJO */
 
-.work{
+.work.section{
     width:100%;
     max-width:none;
-    margin:0 auto;
     padding-left:40px;
     padding-right:40px;
 }
 
 .work-heading{
-    width:min(100%,1380px);
-    margin:0 auto 60px;
+    width:100%;
+    max-width:1500px;
+    margin:0 auto 55px;
 }
 
 .work-heading .kicker{
@@ -148,47 +148,79 @@ body{
     line-height:.98;
 }
 
-.work-gallery{
-    width:min(100%,1380px);
+
+/* CARRUSEL */
+
+.work-carousel-wrap{
+    position:relative;
+    width:100%;
+    max-width:1500px;
     margin:0 auto;
+}
+
+.work-carousel{
     display:flex;
-    flex-direction:column;
-    gap:16px;
-}
+    align-items:center;
+    gap:10px;
 
-.work-full{
     width:100%;
+    overflow-x:auto;
+
+    scroll-behavior:smooth;
+    scroll-snap-type:x mandatory;
+
+    scrollbar-width:none;
 }
 
-.work-full img,
-.work-row img{
+.work-carousel::-webkit-scrollbar{
+    display:none;
+}
+
+.work-carousel img{
     display:block;
-    width:100%;
-    height:auto;
+    height:520px;
+    width:auto;
+    max-width:none;
+    flex:0 0 auto;
+    scroll-snap-align:start;
 }
 
-/* Filas de imágenes */
 
-.work-row{
-    display:grid;
-    gap:16px;
-    align-items:start;
+/* FLECHAS */
+
+.work-arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:5;
+
+    width:46px;
+    height:46px;
+
+    border:1px solid rgba(243,239,232,.70);
+    background:rgba(17,20,15,.38);
+    color:#f3efe8;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:1.15rem;
+    cursor:pointer;
+    transition:.25s ease;
 }
 
-.work-row-two{
-    grid-template-columns:1fr 1fr;
+.work-arrow:hover{
+    background:#f3efe8;
+    color:#1f1d19;
 }
 
-.work-row-three{
-    grid-template-columns:repeat(3,1fr);
+.work-prev{
+    left:18px;
 }
 
-/* Las dos imágenes verticales quedan un poco más contenidas */
-
-.work-vertical-pair{
-    width:100%;
-    max-width:1050px;
-    margin:0 auto;
+.work-next{
+    right:18px;
 }
 .studio{
   display:grid;
