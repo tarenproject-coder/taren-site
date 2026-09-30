@@ -217,7 +217,41 @@ footer{
 /* CUESTIONARIO TAREN */
 
 .questionnaire{
-    border-top:1px solid var(--line);
+    background:#717260;
+    color:#f3efe8;
+    border-top:none;
+}
+.questionnaire .kicker,
+.questionnaire .form-number{
+    color:rgba(243,239,232,.72);
+}
+
+.questionnaire .section-title h2,
+.questionnaire .form-step h3{
+    color:#f3efe8;
+}
+
+.questionnaire .form-option{
+    border-color:rgba(243,239,232,.28);
+}
+
+.questionnaire .form-option:last-of-type{
+    border-color:rgba(243,239,232,.28);
+}
+
+.questionnaire .form-option span{
+    color:#f3efe8;
+}
+
+.questionnaire .form-next{
+    background:#f3efe8;
+    border-color:#f3efe8;
+    color:#717260;
+}
+
+.questionnaire .form-next:hover{
+    background:transparent;
+    color:#f3efe8;
 }
 
 .questionnaire .section-title{
