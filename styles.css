@@ -214,6 +214,101 @@ footer{
   text-transform:uppercase;
   letter-spacing:.12em;
 }
+/* CUESTIONARIO TAREN */
+
+.questionnaire{
+    border-top:1px solid var(--line);
+}
+
+.questionnaire .section-title{
+    margin-bottom:64px;
+}
+
+.taren-form{
+    max-width:900px;
+}
+
+.form-step{
+    display:none;
+}
+
+.form-step.active{
+    display:block;
+}
+
+.form-number{
+    font-size:.72rem;
+    text-transform:uppercase;
+    letter-spacing:.18em;
+    color:var(--muted);
+    margin-bottom:28px;
+}
+
+.form-step h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(2.2rem,4vw,4rem);
+    font-weight:500;
+    line-height:1;
+    margin:0 0 48px;
+}
+
+.form-option{
+    display:block;
+    position:relative;
+    border-top:1px solid var(--line);
+    cursor:pointer;
+}
+
+.form-option:last-of-type{
+    border-bottom:1px solid var(--line);
+}
+
+.form-option input{
+    position:absolute;
+    opacity:0;
+}
+
+.form-option span{
+    display:block;
+    padding:22px 8px;
+    font-size:1rem;
+    transition:.25s ease;
+}
+
+.form-option:hover span{
+    padding-left:20px;
+}
+
+.form-option input:checked + span{
+    padding-left:20px;
+    font-weight:500;
+}
+
+.form-option input:checked + span::before{
+    content:"→";
+    margin-right:14px;
+}
+
+.form-navigation{
+    margin-top:42px;
+}
+
+.form-next{
+    border:1px solid var(--ink);
+    background:var(--ink);
+    color:white;
+    padding:14px 24px;
+    font-family:Inter,sans-serif;
+    font-size:.78rem;
+    letter-spacing:.04em;
+    cursor:pointer;
+    transition:.25s ease;
+}
+
+.form-next:hover{
+    background:transparent;
+    color:var(--ink);
+}
 @media(max-width:900px){
 
     .brand-bar{
@@ -283,11 +378,6 @@ footer{
         font-size:1.5rem;
     }
 
-    /* CUESTIONARIO */
-    .questionnaire iframe{
-        width:100%;
-        max-width:100%;
-    }
 
     /* CONTACTO */
     .contact{
