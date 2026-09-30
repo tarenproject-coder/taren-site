@@ -90,6 +90,22 @@ body{
     font-size:clamp(2rem,3vw,3.5rem);
     line-height:1.05;
 }
+.studio-cta{
+    display:inline-block;
+    margin-top:28px;
+    padding-bottom:6px;
+    color:var(--ink);
+    text-decoration:none;
+    font-size:.78rem;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    border-bottom:1px solid var(--ink);
+    transition:.25s ease;
+}
+
+.studio-cta:hover{
+    opacity:.55;
+}
 .section-title{
   margin-bottom:48px;
 }
