@@ -186,6 +186,18 @@ body{
   min-height:720px;
   background:url('estudio-taren.jpg.jpg?v=2') center/cover no-repeat;
 }
+.divider-photo{
+    padding-top:0;
+    padding-bottom:0;
+}
+
+.divider-photo-image{
+    width:100%;
+    max-width:1100px;
+    margin:0 auto;
+    aspect-ratio:16 / 3;
+    background:url('foto-divider.jpg') center/cover no-repeat;
+}
 .services{
   padding-top:80px;
 }
