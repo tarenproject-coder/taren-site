@@ -225,34 +225,62 @@ body{
     font-weight:500;
     line-height:.95;
 }
-
-.contact-links{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap:30px;
-    padding-top:24px;
+.contact-list{
     border-top:1px solid var(--line);
 }
 
-.contact-links a,
-.contact-links span{
-    color:var(--muted);
-    text-decoration:none;
-    font-size:.72rem;
+.contact-item{
+    display:grid;
+    grid-template-columns:180px 1fr;
+    align-items:center;
+    padding:24px 0;
+    border-bottom:1px solid var(--line);
+}
+
+.contact-label{
+    font-size:.68rem;
     text-transform:uppercase;
-    letter-spacing:.12em;
+    letter-spacing:.16em;
+    color:var(--muted);
 }
 
-.contact-links a:last-child{
-    text-align:right;
-}
-
-.contact-links span{
-    text-align:center;
-}
-
-.contact-links a:hover{
+.contact-value,
+.contact-link{
     color:var(--ink);
+    font-size:.9rem;
+    text-decoration:none;
+}
+
+.contact-link:hover{
+    opacity:.55;
+}
+
+.instagram-button{
+    width:max-content;
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    padding:9px 14px;
+    border:1px solid var(--ink);
+    color:var(--ink);
+    text-decoration:none;
+    font-size:.78rem;
+    letter-spacing:.04em;
+    transition:.25s ease;
+}
+
+.instagram-button svg{
+    display:block;
+    width:15px;
+    height:15px;
+    fill:none;
+    stroke:currentColor;
+    stroke-width:1.5;
+}
+
+.instagram-button:hover{
+    background:var(--ink);
+    color:var(--bg);
 }
 /* CUESTIONARIO TAREN */
 
