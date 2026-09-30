@@ -455,22 +455,29 @@ body{
     }
 
 
-    /* CONTACTO */
-    .contact{
-        padding-top:80px;
-        padding-bottom:80px;
-    }
+   /* CONTACTO */
 
-    .email{
-        font-size:clamp(2.4rem,11vw,4rem);
-    }
+.contact{
+    padding-top:60px;
+    padding-bottom:60px;
+}
 
-    .footer-meta{
-        flex-direction:column;
-        gap:10px;
-    }
+.contact-item{
+    grid-template-columns:1fr;
+    gap:10px;
+    padding:20px 0;
+}
 
-    footer{
-        padding:28px 20px 34px;
-    }
+.contact-label{
+    font-size:.65rem;
+}
+
+.contact-value,
+.contact-link{
+    font-size:.9rem;
+}
+
+.instagram-button{
+    padding:9px 13px;
+}
 }
