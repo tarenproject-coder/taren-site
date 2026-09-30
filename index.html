@@ -222,6 +222,44 @@
     </div>
 
 </section>
+    <script>
+const carousel = document.getElementById('workCarousel');
+const images = Array.from(carousel.querySelectorAll('img'));
+const nextButton = document.querySelector('.work-next');
+const prevButton = document.querySelector('.work-prev');
+
+nextButton.addEventListener('click', () => {
+    const current = carousel.scrollLeft;
+
+    const nextImage = images.find(
+        image => image.offsetLeft > current + 10
+    );
+
+    if (nextImage) {
+        carousel.scrollTo({
+            left: nextImage.offsetLeft,
+            behavior: 'smooth'
+        });
+    }
+});
+
+prevButton.addEventListener('click', () => {
+    const current = carousel.scrollLeft;
+
+    const previousImages = images.filter(
+        image => image.offsetLeft < current - 10
+    );
+
+    const previousImage = previousImages[previousImages.length - 1];
+
+    if (previousImage) {
+        carousel.scrollTo({
+            left: previousImage.offsetLeft,
+            behavior: 'smooth'
+        });
+    }
+});
+</script>
 
 </body>
 </html>
