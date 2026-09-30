@@ -52,12 +52,12 @@ body{
   background:linear-gradient(to top,rgba(17,14,11,.6),rgba(17,14,11,.06) 65%);
 }
 .hero-copy{
-  position:relative;
-  z-index:2;
-  width:min(100%,var(--max));
-  margin:0 auto;
-  padding:0 48px 78px;
-  color:white;
+    position:relative;
+    z-index:2;
+    width:100%;
+    margin:0;
+    padding:0 46px 78px;
+    color:white;
 }
 .hero-copy p,.kicker{
   text-transform:uppercase;
@@ -67,7 +67,7 @@ body{
 }
 .hero-copy h1{
   margin:14px 0 0;
-  max-width:1000px;
+ max-width:1250px;
   font-family:'Cormorant Garamond',serif;
   font-weight:500;
   font-size:clamp(4rem,8vw,8rem);
