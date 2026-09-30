@@ -209,32 +209,50 @@ body{
   margin:4px 0 0;
   line-height:1.7;
 }
+/* CONTACTO */
+
 .contact{
-  padding-top:170px;
-  padding-bottom:120px;
-  border-top:1px solid var(--line);
+    padding-top:120px;
+    padding-bottom:60px;
+    border-top:1px solid var(--line);
 }
-.email{
-  margin:46px 0 80px;
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(3rem,7vw,7rem);
+
+.contact h2{
+    max-width:850px;
+    margin:0 0 90px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(3rem,7vw,7rem);
+    font-weight:500;
+    line-height:.95;
 }
-.footer-meta{
-  display:flex;
-  justify-content:space-between;
-  text-transform:uppercase;
-  letter-spacing:.12em;
-  font-size:.72rem;
-  color:var(--muted);
+
+.contact-links{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:30px;
+    padding-top:24px;
+    border-top:1px solid var(--line);
 }
-footer{
-  width:min(100%,var(--max));
-  margin:0 auto;
-  padding:30px 48px 40px;
-  border-top:1px solid var(--line);
-  font-size:.72rem;
-  text-transform:uppercase;
-  letter-spacing:.12em;
+
+.contact-links a,
+.contact-links span{
+    color:var(--muted);
+    text-decoration:none;
+    font-size:.72rem;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+}
+
+.contact-links a:last-child{
+    text-align:right;
+}
+
+.contact-links span{
+    text-align:center;
+}
+
+.contact-links a:hover{
+    color:var(--ink);
 }
 /* CUESTIONARIO TAREN */
 
