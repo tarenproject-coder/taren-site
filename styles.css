@@ -194,10 +194,10 @@ body{
 .service span,.service p{color:var(--muted)}
 .service span{font-size:.72rem}
 .service h3{
-  margin:0;
-  font-family:'Cormorant Garamond',serif;
-  font-size:2rem;
-  font-weight:500;
+    margin:0;
+    font-family:'Libre Baskerville',serif;
+    font-size:2rem;
+    font-weight:400;
 }
 .service p{
   margin:4px 0 0;
