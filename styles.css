@@ -220,6 +220,8 @@ footer{
     background:#717260;
     color:#f3efe8;
     border-top:none;
+    box-shadow:0 0 0 100vmax #717260;
+    clip-path:inset(0 -100vmax);
 }
 .questionnaire .kicker,
 .questionnaire .form-number{
