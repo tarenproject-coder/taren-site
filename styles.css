@@ -121,60 +121,74 @@ body{
   font-weight:500;
   font-size:clamp(3.2rem,6vw,6rem);
 }
-.project{margin-bottom:34px}
-.project-gallery{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:28px;
-    max-width:1100px;
+/* NUESTRO TRABAJO */
+
+.work{
+    width:100%;
+    max-width:none;
     margin:0 auto;
-}
-.project-image{
-    background-size:cover;
-    background-position:center;
-}
-.project-wide .project-image{aspect-ratio:16/8.5}
-.project-pair{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:28px;
-}
-.project-caption{
-  display:flex;
-  justify-content:space-between;
-  padding:16px 0 20px;
-  border-bottom:1px solid var(--line);
-}
-.project-caption h3{
-  margin:0 0 6px;
-  font-size:1rem;
-  font-weight:400;
-}
-.project-caption p,.project-caption span{
-  margin:0;
-  font-size:.75rem;
-  color:var(--muted);
-}
-.p1{
-    background-image:url('proyecto-1.jpg.png');
-    grid-column:1 / -1;
-    aspect-ratio:2 / 1;
+    padding-left:40px;
+    padding-right:40px;
 }
 
-.p2{
-    background-image:url('proyecto-2.jpg.png');
-    aspect-ratio:4 / 5;
+.work-heading{
+    width:min(100%,1380px);
+    margin:0 auto 60px;
 }
 
-.p3{
-    background-image:url('proyecto-3.jpg.png');
-    grid-column:1 / -1;
-    aspect-ratio:16 / 9;
+.work-heading .kicker{
+    margin:0;
 }
 
-.p4{
-    background-image:url('proyecto-4.jpg.png');
-    aspect-ratio:4 / 5;
+.work-heading h2{
+    margin:10px 0 0;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:500;
+    font-size:clamp(3.2rem,6vw,6rem);
+    line-height:.98;
+}
+
+.work-gallery{
+    width:min(100%,1380px);
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.work-full{
+    width:100%;
+}
+
+.work-full img,
+.work-row img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+/* Filas de imágenes */
+
+.work-row{
+    display:grid;
+    gap:16px;
+    align-items:start;
+}
+
+.work-row-two{
+    grid-template-columns:1fr 1fr;
+}
+
+.work-row-three{
+    grid-template-columns:repeat(3,1fr);
+}
+
+/* Las dos imágenes verticales quedan un poco más contenidas */
+
+.work-vertical-pair{
+    width:100%;
+    max-width:1050px;
+    margin:0 auto;
 }
 .studio{
   display:grid;
