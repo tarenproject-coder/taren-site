@@ -215,16 +215,96 @@ footer{
   letter-spacing:.12em;
 }
 @media(max-width:900px){
-  .brand-bar{padding:22px 24px}
-  .hero-copy{padding:0 24px 44px}
-  .hero-copy h1{font-size:clamp(3.5rem,16vw,6rem)}
-  .section{padding:90px 24px}
-  .project-pair,.studio{grid-template-columns:1fr}
-  .project-wide .project-image,.project-image{aspect-ratio:4/5}
-  .studio{gap:42px}
-  .studio-image{min-height:520px}
-  .service{grid-template-columns:44px 1fr;gap:12px 20px}
-  .service p{grid-column:2}
-  .footer-meta{flex-direction:column;gap:10px}
-  footer{padding:28px 24px 34px}
+
+    .brand-bar{
+        padding:22px 20px;
+    }
+
+    .hero-copy{
+        padding:0 20px 38px;
+    }
+
+    .hero-copy h1{
+        font-size:clamp(2.8rem,11vw,4.5rem);
+        line-height:.92;
+    }
+
+    .section{
+        padding:72px 20px;
+    }
+
+    /* EL ESTUDIO */
+    .studio{
+        grid-template-columns:1fr;
+        gap:36px;
+    }
+
+    .studio-image{
+        min-height:0;
+        aspect-ratio:4/5;
+    }
+
+    .studio-copy h2{
+        font-size:clamp(2.2rem,9vw,3.3rem);
+        line-height:1;
+    }
+
+    /* PROYECTOS */
+    .project-gallery{
+        grid-template-columns:1fr;
+        gap:18px;
+        max-width:100%;
+    }
+
+    .p1,
+    .p3{
+        grid-column:auto;
+        aspect-ratio:16/9;
+    }
+
+    .p2,
+    .p4{
+        grid-column:auto;
+        aspect-ratio:4/5;
+    }
+
+    /* SERVICIOS */
+    .service{
+        grid-template-columns:38px 1fr;
+        gap:10px 16px;
+        padding:22px 0;
+    }
+
+    .service p{
+        grid-column:2;
+    }
+
+    .service h3{
+        font-size:1.5rem;
+    }
+
+    /* CUESTIONARIO */
+    .questionnaire iframe{
+        width:100%;
+        max-width:100%;
+    }
+
+    /* CONTACTO */
+    .contact{
+        padding-top:80px;
+        padding-bottom:80px;
+    }
+
+    .email{
+        font-size:clamp(2.4rem,11vw,4rem);
+    }
+
+    .footer-meta{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    footer{
+        padding:28px 20px 34px;
+    }
 }
