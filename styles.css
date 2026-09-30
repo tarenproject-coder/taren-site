@@ -196,7 +196,7 @@ body{
     max-width:1100px;
     margin:0 auto;
     aspect-ratio:16 / 3;
-    background:url('foto-divider.jpg') center/cover no-repeat;
+    background:url('foto-divider.jpg.jpg') center/cover no-repeat;
 }
 .services{
   padding-top:80px;
