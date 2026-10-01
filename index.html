@@ -230,56 +230,68 @@
     </div>
 
 </section>
-   <script>
+  <script>
 const carousel = document.getElementById('workCarousel');
 const images = Array.from(carousel.querySelectorAll('img'));
 const nextButton = document.querySelector('.work-next');
 const prevButton = document.querySelector('.work-prev');
 
-function getCurrentIndex() {
-    const current = carousel.scrollLeft;
-
-    let closestIndex = 0;
-    let closestDistance = Infinity;
-
-    images.forEach((image, index) => {
-        const distance = Math.abs(image.offsetLeft - current);
-
-        if (distance < closestDistance) {
-            closestDistance = distance;
-            closestIndex = index;
-        }
-    });
-
-    return closestIndex;
-}
-
 nextButton.addEventListener('click', () => {
-    const currentIndex = getCurrentIndex();
 
-    const nextIndex =
-        currentIndex === images.length - 1
-            ? 0
-            : currentIndex + 1;
+    const maxScroll =
+        carousel.scrollWidth - carousel.clientWidth;
 
-    carousel.scrollTo({
-        left: images[nextIndex].offsetLeft,
-        behavior: 'smooth'
-    });
+    /* Si ya estamos al final, regresar a la primera */
+    if (carousel.scrollLeft >= maxScroll - 10) {
+        carousel.scrollTo({
+            left: 0,
+            behavior: 'smooth'
+        });
+        return;
+    }
+
+    /* Buscar la siguiente imagen */
+    const nextImage = images.find(
+        image => image.offsetLeft > carousel.scrollLeft + 20
+    );
+
+    if (nextImage) {
+        carousel.scrollTo({
+            left: Math.min(nextImage.offsetLeft, maxScroll),
+            behavior: 'smooth'
+        });
+    }
 });
 
+
 prevButton.addEventListener('click', () => {
-    const currentIndex = getCurrentIndex();
 
-    const prevIndex =
-        currentIndex === 0
-            ? images.length - 1
-            : currentIndex - 1;
+    const maxScroll =
+        carousel.scrollWidth - carousel.clientWidth;
 
-    carousel.scrollTo({
-        left: images[prevIndex].offsetLeft,
-        behavior: 'smooth'
-    });
+    /* Si estamos al inicio, ir hasta el final */
+    if (carousel.scrollLeft <= 10) {
+        carousel.scrollTo({
+            left: maxScroll,
+            behavior: 'smooth'
+        });
+        return;
+    }
+
+    /* Buscar la imagen anterior */
+    const previousImages = images.filter(
+        image => image.offsetLeft < carousel.scrollLeft - 20
+    );
+
+    const previousImage =
+        previousImages[previousImages.length - 1];
+
+    if (previousImage) {
+        carousel.scrollTo({
+            left: previousImage.offsetLeft,
+            behavior: 'smooth'
+        });
+    }
 });
 </script>
 
