@@ -502,6 +502,82 @@ body{
     background:transparent;
     color:var(--ink);
 }
+/* CAMPOS DEL CUESTIONARIO */
+
+.form-field{
+    margin:22px 0;
+}
+
+.form-field input,
+.form-field textarea{
+    width:100%;
+    background:transparent;
+    border:none;
+    border-bottom:1px solid rgba(243,239,232,.32);
+    color:#f3efe8;
+    font-family:Inter,sans-serif;
+    font-size:1rem;
+    font-weight:300;
+    padding:16px 4px;
+    outline:none;
+}
+
+.form-field textarea{
+    resize:vertical;
+    min-height:150px;
+    line-height:1.7;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder{
+    color:rgba(243,239,232,.55);
+}
+
+.form-field input:focus,
+.form-field textarea:focus{
+    border-bottom-color:#f3efe8;
+}
+
+
+/* NAVEGACIÓN DEL FORMULARIO */
+
+.form-navigation{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-top:42px;
+}
+
+.form-back,
+.form-submit{
+    border:1px solid #f3efe8;
+    padding:14px 24px;
+    font-family:Inter,sans-serif;
+    font-size:.78rem;
+    letter-spacing:.04em;
+    cursor:pointer;
+    transition:.25s ease;
+}
+
+.form-back{
+    background:transparent;
+    color:#f3efe8;
+}
+
+.form-submit{
+    background:#f3efe8;
+    color:#717260;
+}
+
+.form-back:hover{
+    background:#f3efe8;
+    color:#717260;
+}
+
+.form-submit:hover{
+    background:transparent;
+    color:#f3efe8;
+}
 @media(max-width:900px){
 
    .brand-bar{
