@@ -222,42 +222,56 @@
     </div>
 
 </section>
-    <script>
+   <script>
 const carousel = document.getElementById('workCarousel');
 const images = Array.from(carousel.querySelectorAll('img'));
 const nextButton = document.querySelector('.work-next');
 const prevButton = document.querySelector('.work-prev');
 
-nextButton.addEventListener('click', () => {
+function getCurrentIndex() {
     const current = carousel.scrollLeft;
 
-    const nextImage = images.find(
-        image => image.offsetLeft > current + 10
-    );
+    let closestIndex = 0;
+    let closestDistance = Infinity;
 
-    if (nextImage) {
-        carousel.scrollTo({
-            left: nextImage.offsetLeft,
-            behavior: 'smooth'
-        });
-    }
+    images.forEach((image, index) => {
+        const distance = Math.abs(image.offsetLeft - current);
+
+        if (distance < closestDistance) {
+            closestDistance = distance;
+            closestIndex = index;
+        }
+    });
+
+    return closestIndex;
+}
+
+nextButton.addEventListener('click', () => {
+    const currentIndex = getCurrentIndex();
+
+    const nextIndex =
+        currentIndex === images.length - 1
+            ? 0
+            : currentIndex + 1;
+
+    carousel.scrollTo({
+        left: images[nextIndex].offsetLeft,
+        behavior: 'smooth'
+    });
 });
 
 prevButton.addEventListener('click', () => {
-    const current = carousel.scrollLeft;
+    const currentIndex = getCurrentIndex();
 
-    const previousImages = images.filter(
-        image => image.offsetLeft < current - 10
-    );
+    const prevIndex =
+        currentIndex === 0
+            ? images.length - 1
+            : currentIndex - 1;
 
-    const previousImage = previousImages[previousImages.length - 1];
-
-    if (previousImage) {
-        carousel.scrollTo({
-            left: previousImage.offsetLeft,
-            behavior: 'smooth'
-        });
-    }
+    carousel.scrollTo({
+        left: images[prevIndex].offsetLeft,
+        behavior: 'smooth'
+    });
 });
 </script>
 
