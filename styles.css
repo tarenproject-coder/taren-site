@@ -540,6 +540,12 @@ body{
     .section{
         padding:72px 20px;
     }
+  .divider-photo-image{
+    aspect-ratio:auto;
+    height:200px;
+    background-size:cover;
+    background-position:center;
+}
 
     /* EL ESTUDIO */
     .studio{
