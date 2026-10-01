@@ -96,12 +96,13 @@ body{
   font-weight:500;
 }
 .hero-copy h1{
-  margin:14px 0 0;
- max-width:1250px;
-  font-family:'Cormorant Garamond',serif;
-  font-weight:500;
-  font-size:clamp(4rem,8vw,8rem);
-  line-height:.88;
+    margin:14px 0 0;
+    max-width:1250px;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:500;
+    font-size:clamp(3.2rem,6.5vw,6.5rem);
+    line-height:.9;
+    text-transform:uppercase;
 }
 .section{
   width:min(100%,var(--max));
