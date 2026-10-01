@@ -16,16 +16,46 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 .brand-bar{
-  position:absolute;
-  z-index:10;
-  top:0;left:0;right:0;
-  padding:28px 46px;
-  color:white;
+    position:absolute;
+    z-index:10;
+    top:0;
+    left:0;
+    right:0;
+    padding:28px 46px;
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 .brand{
   font-size:1rem;
   font-weight:500;
   letter-spacing:.38em;
+}
+.top-nav{
+    display:flex;
+    align-items:center;
+    gap:34px;
+}
+
+.top-nav a{
+    color:white;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:.65rem;
+    font-weight:500;
+    letter-spacing:.16em;
+    transition:.25s ease;
+}
+
+.top-nav a:hover{
+    opacity:.55;
+}
+
+.top-nav a:last-child{
+    padding-bottom:5px;
+    border-bottom:1px solid rgba(255,255,255,.75);
 }
 .brand img{
     display:block;
