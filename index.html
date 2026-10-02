@@ -589,20 +589,49 @@ formBackButtons.forEach(button => {
         }
     });
 });
-    /* FINAL DEL CUESTIONARIO */
+  /* FINAL DEL CUESTIONARIO */
 
-const submitButton = tarenForm.querySelector('.form-submit');
+tarenForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
 
-submitButton.addEventListener('click', () => {
+    const submitButton = tarenForm.querySelector('.form-submit');
     const finalStep = formSteps[formSteps.length - 1];
 
-    finalStep.innerHTML = `
-        <p class="form-number">09 / 09</p>
-        <h3>Gracias por contarnos sobre tu proyecto.</h3>
-        <p class="form-thankyou">
-            Hemos recibido tu información. Nos pondremos en contacto contigo para conocer más sobre tu proyecto.
-        </p>
-    `;
+    submitButton.disabled = true;
+    submitButton.textContent = 'Enviando...';
+
+    const formData = new FormData(tarenForm);
+
+    try {
+        const response = await fetch(tarenForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            finalStep.innerHTML = `
+                <p class="form-number">09 / 09</p>
+                <h3>Gracias por contarnos sobre tu proyecto.</h3>
+                <p class="form-thankyou">
+                    Hemos recibido tu información. Nos pondremos en contacto contigo para conocer más sobre tu proyecto.
+                </p>
+            `;
+        } else {
+            submitButton.disabled = false;
+            submitButton.textContent = 'Enviar proyecto →';
+
+            alert('No pudimos enviar tu información. Por favor intenta nuevamente.');
+        }
+
+    } catch (error) {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Enviar proyecto →';
+
+        alert('No pudimos enviar tu información. Por favor intenta nuevamente.');
+    }
 });
 </script>
 
