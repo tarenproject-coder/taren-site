@@ -563,7 +563,7 @@ function showFormStep(index) {
 
     currentStep = index;
 
-    document.getElementById('questionario')?.scrollIntoView({
+    document.getElementById('cuestionario')?.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
     });
@@ -583,6 +583,21 @@ formBackButtons.forEach(button => {
             showFormStep(currentStep - 1);
         }
     });
+});
+    /* FINAL DEL CUESTIONARIO */
+
+const submitButton = tarenForm.querySelector('.form-submit');
+
+submitButton.addEventListener('click', () => {
+    const finalStep = formSteps[formSteps.length - 1];
+
+    finalStep.innerHTML = `
+        <p class="form-number">09 / 09</p>
+        <h3>Gracias por contarnos sobre tu proyecto.</h3>
+        <p class="form-thankyou">
+            Hemos recibido tu información. Nos pondremos en contacto contigo para conocer más sobre tu proyecto.
+        </p>
+    `;
 });
 </script>
 
