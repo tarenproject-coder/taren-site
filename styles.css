@@ -548,33 +548,25 @@ body{
     margin-top:42px;
 }
 
-.form-back,
-.form-submit{
+.questionnaire .form-back,
+.questionnaire .form-next,
+.questionnaire .form-submit{
     border:1px solid #f3efe8;
+    background:#f3efe8;
+    color:#717260;
     padding:14px 24px;
+
     font-family:Inter,sans-serif;
     font-size:.78rem;
     letter-spacing:.04em;
+
     cursor:pointer;
     transition:.25s ease;
 }
 
-.form-back{
-    background:transparent;
-    color:#f3efe8;
-}
-
-.form-submit{
-    background:#f3efe8;
-    color:#717260;
-}
-
-.form-back:hover{
-    background:#f3efe8;
-    color:#717260;
-}
-
-.form-submit:hover{
+.questionnaire .form-back:hover,
+.questionnaire .form-next:hover,
+.questionnaire .form-submit:hover{
     background:transparent;
     color:#f3efe8;
 }
