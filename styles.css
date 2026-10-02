@@ -570,6 +570,13 @@ body{
     background:transparent;
     color:#f3efe8;
 }
+.form-thankyou{
+    max-width:650px;
+    margin-top:28px;
+    color:rgba(243,239,232,.72);
+    font-size:1rem;
+    line-height:1.8;
+}
 @media(max-width:900px){
 
    .brand-bar{
