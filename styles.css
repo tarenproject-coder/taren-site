@@ -98,7 +98,7 @@ body{
 .hero-copy h1{
     margin:14px 0 0;
     max-width:1250px;
-    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(2.4rem,4.8vw,5rem);
     font-weight:500;
     font-size:clamp(2.8rem,5.8vw,5.8rem);
     line-height:.9;
