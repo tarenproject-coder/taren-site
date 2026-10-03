@@ -100,7 +100,7 @@ body{
     max-width:1250px;
     font-family:'Cormorant Garamond',serif;
     font-weight:500;
-    font-size:clamp(3.2rem,6.5vw,6.5rem);
+    font-size:clamp(2.8rem,5.8vw,5.8rem);
     line-height:.9;
     text-transform:uppercase;
 }
