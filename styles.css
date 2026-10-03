@@ -608,9 +608,9 @@ body{
     }
 
     .hero-copy h1{
-        font-size:clamp(2.8rem,11vw,4.5rem);
-        line-height:.92;
-    }
+    font-size:clamp(2.3rem,9vw,3.8rem);
+    line-height:.92;
+}
 
     .section{
         padding:72px 20px;
