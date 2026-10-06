@@ -276,6 +276,7 @@ body{
     background:url('foto-divider.jpg.jpg') center/cover no-repeat;
 }
 .divider-photo-image-2{
+    aspect-ratio:16 / 4.5;
     background-image:url('foto-divider3.jpg.jpg');
 }
 .services{
