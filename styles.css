@@ -279,6 +279,35 @@ body{
     aspect-ratio:16 / 4.5;
     background-image:url('foto-divider3.jpg.jpg');
 }
+.divider-quote{
+    width:100vw;
+    margin-left:calc(50% - 50vw);
+    background:#717260;
+    color:#f3efe8;
+    padding:90px max(48px, calc((100vw - 1440px) / 2));
+}
+
+.divider-quote .quote-mark{
+    display:block;
+    font-family:'Cormorant Garamond',serif;
+    font-size:4rem;
+    line-height:.5;
+    margin-bottom:35px;
+    opacity:.45;
+}
+
+.divider-quote p{
+    max-width:1000px;
+    margin:0;
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(3rem,5vw,5.5rem);
+    line-height:1.02;
+    font-weight:500;
+}
+
+.divider-quote em{
+    font-weight:400;
+}
 .divider-gallery{
     width:100vw;
     margin-left:calc(50% - 50vw);
