@@ -674,6 +674,19 @@ body{
     background-size:cover;
     background-position:center;
 }
+  .divider-quote{
+    padding:60px 24px;
+}
+
+.divider-quote .quote-mark{
+    font-size:3rem;
+    margin-bottom:28px;
+}
+
+.divider-quote p{
+    font-size:clamp(2.2rem,9vw,3.2rem);
+    line-height:1.05;
+}
   .divider-gallery{
     width:100vw;
     margin-left:calc(50% - 50vw);
