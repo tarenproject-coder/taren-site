@@ -635,6 +635,10 @@ body{
     .section{
         padding:72px 20px;
     }
+  .divider-photo.section{
+    padding-top:0;
+    padding-bottom:0;
+}
   .divider-photo-image{
     aspect-ratio:auto;
     height:200px;
