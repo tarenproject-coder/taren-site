@@ -645,6 +645,29 @@ body{
     background-size:cover;
     background-position:center;
 }
+  .divider-gallery{
+    width:100vw;
+    margin-left:calc(50% - 50vw);
+    display:flex;
+    gap:4px;
+    overflow-x:auto;
+    padding-top:4px;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+}
+
+.divider-gallery::-webkit-scrollbar{
+    display:none;
+}
+
+.divider-gallery img{
+    flex:0 0 42vw;
+    width:42vw;
+    height:260px;
+    object-fit:cover;
+    object-position:center;
+    scroll-snap-align:start;
+}
 
     /* EL ESTUDIO */
     .studio{
