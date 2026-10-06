@@ -275,6 +275,9 @@ body{
     aspect-ratio:16 / 3;
     background:url('foto-divider.jpg.jpg') center/cover no-repeat;
 }
+.divider-photo-image-2{
+    background-image:url('foto-divider3.jpg.jpg');
+}
 .services{
   padding-top:80px;
 }
