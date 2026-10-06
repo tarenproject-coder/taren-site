@@ -273,7 +273,7 @@ body{
     width:100vw;
     margin-left:calc(50% - 50vw);
     aspect-ratio:16 / 3;
-    background:url('foto-divider.jpg.jpg') center/cover no-repeat;
+    background:url('foto-divider0.jpg.jpg') center/cover no-repeat;
 }
 .divider-photo-image-2{
     aspect-ratio:16 / 4.5;
