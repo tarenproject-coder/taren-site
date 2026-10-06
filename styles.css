@@ -641,7 +641,7 @@ body{
 }
   .divider-photo-image{
     aspect-ratio:auto;
-    height:200px;
+    height:150px;
     background-size:cover;
     background-position:center;
 }
