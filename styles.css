@@ -369,6 +369,26 @@ body{
     padding-bottom:60px;
     border-top:1px solid var(--line);
 }
+.contact{
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:80px;
+    align-items:start;
+}
+
+.contact-isotipo{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding-top:20px;
+}
+
+.contact-isotipo img{
+    width:180px;
+    max-width:100%;
+    height:auto;
+    display:block;
+}
 
 .contact h2{
     max-width:850px;
