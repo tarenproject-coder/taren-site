@@ -312,6 +312,14 @@ body{
 .divider-quote em{
     font-weight:400;
 }
+.quote-signature{
+    margin-top:28px;
+    font-family:Inter,sans-serif;
+    font-size:.78rem;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:rgba(243,239,232,.75);
+}
 .divider-gallery{
     width:100vw;
     margin-left:calc(50% - 50vw);
