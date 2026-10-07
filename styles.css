@@ -297,7 +297,7 @@ body{
 }
 
 .divider-quote p{
-    max-width:1000px;
+   max-width:1400px;
     margin:0;
     font-family:'Cormorant Garamond',serif;
     font-size:clamp(3rem,4vw,4.5rem);
@@ -306,6 +306,7 @@ body{
 }
 .divider-quote p span{
     display:block;
+    white-space:nowrap;
 }
 
 .divider-quote em{
