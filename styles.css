@@ -690,6 +690,8 @@ body{
     background-position:center;
 }
   .divider-quote{
+    width:100vw;
+    box-sizing:border-box;
     padding:60px 24px;
 }
 
@@ -699,8 +701,12 @@ body{
 }
 
 .divider-quote p{
-    font-size:clamp(2.2rem,9vw,3.2rem);
+    max-width:100%;
+    font-size:clamp(1.9rem,8vw,2.6rem);
     line-height:1.05;
+}
+  .divider-quote p span{
+    white-space:normal;
 }
   .divider-gallery{
     width:100vw;
