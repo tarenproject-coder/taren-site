@@ -373,10 +373,9 @@ body{
 }
 
 .contact-isotipo{
-    position:absolute;
-    left:-390px;
-    top:55px;
-    width:420px;
+    position:static;
+    width:260px;
+    margin-bottom:50px;
 }
 
 .contact-isotipo img{
