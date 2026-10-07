@@ -284,7 +284,7 @@ body{
     margin-left:calc(50% - 50vw);
     background:#717260;
     color:#f3efe8;
-    padding:90px max(48px, calc((100vw - 1440px) / 2));
+    padding:90px max(48px, calc((100vw - 1600px) / 2));
 }
 
 .divider-quote .quote-mark{
