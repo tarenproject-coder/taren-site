@@ -821,6 +821,9 @@ body{
     width:150px;
     margin-bottom:32px;
 }
+  .contact-list{
+    margin-top:-35px;
+}
 
 .contact-item{
     grid-template-columns:1fr;
