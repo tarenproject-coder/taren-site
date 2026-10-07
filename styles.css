@@ -300,9 +300,12 @@ body{
     max-width:1000px;
     margin:0;
     font-family:'Cormorant Garamond',serif;
-    font-size:clamp(3rem,5vw,5.5rem);
+    font-size:clamp(3rem,4vw,4.5rem);
     line-height:1.02;
     font-weight:500;
+}
+.divider-quote p span{
+    display:block;
 }
 
 .divider-quote em{
