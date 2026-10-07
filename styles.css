@@ -370,22 +370,18 @@ body{
     border-top:1px solid var(--line);
 }
 .contact{
-    display:grid;
-    grid-template-columns:320px 1fr;
-    gap:80px;
-    align-items:start;
+    position:relative;
 }
 
 .contact-isotipo{
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    padding-top:20px;
+    position:absolute;
+    left:60px;
+    top:120px;
+    width:300px;
 }
 
 .contact-isotipo img{
-    width:180px;
-    max-width:100%;
+    width:100%;
     height:auto;
     display:block;
 }
