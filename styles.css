@@ -817,7 +817,8 @@ body{
     padding-bottom:60px;
 }
   .contact-isotipo{
-    width:150px;
+    width:165px;
+    max-width:45vw;
     margin-bottom:32px;
 }
   .contact-list{
