@@ -92,7 +92,7 @@ body{
 .hero-copy p,.kicker{
   text-transform:uppercase;
   letter-spacing:.18em;
-  font-size:.68rem;
+  font-size:.82em;
   font-weight:500;
 }
 .hero-copy h1{
@@ -100,7 +100,6 @@ body{
     max-width:1250px;
     font-size:clamp(2.4rem,4.8vw,5rem);
     font-weight:500;
-    font-size:clamp(2.8rem,5.8vw,5.8rem);
     line-height:.9;
     text-transform:uppercase;
 }
