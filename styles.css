@@ -844,3 +844,34 @@ body{
     padding:9px 13px;
 }
 }
+/* LOGO CONTACTO — COMPUTADORA */
+@media (min-width:901px){
+    .contact-isotipo{
+        width:180px !important;
+        max-width:180px !important;
+        margin-bottom:50px;
+    }
+
+    .contact-isotipo img{
+        width:100% !important;
+        max-width:100% !important;
+        height:auto;
+        display:block;
+    }
+}
+
+/* LOGO CONTACTO — CELULAR */
+@media (max-width:900px){
+    .contact-isotipo{
+        width:165px !important;
+        max-width:165px !important;
+        margin-bottom:32px;
+    }
+
+    .contact-isotipo img{
+        width:100% !important;
+        max-width:100% !important;
+        height:auto;
+        display:block;
+    }
+}
