@@ -329,7 +329,8 @@ body{
     display:grid;
     grid-template-columns:repeat(6, 1fr);
     gap:4px;
-    padding-top:4px;
+    padding:4px 0 14px;
+    background:#717260;
 }
 
 .divider-gallery img{
