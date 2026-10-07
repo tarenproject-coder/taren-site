@@ -373,14 +373,13 @@ body{
 
 .contact-isotipo{
     position:static;
-    width:160px !important;
-    max-width:160px !important;
+    width:280px;
     margin-bottom:50px;
 }
 
 .contact-isotipo img{
-    width:160px !important;
-    max-width:160px !important;
+    width:100%;
+    max-width:100%;
     height:auto;
     display:block;
 }
