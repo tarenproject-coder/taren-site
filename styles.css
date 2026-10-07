@@ -815,6 +815,10 @@ body{
     padding-top:60px;
     padding-bottom:60px;
 }
+  .contact-isotipo{
+    width:130px;
+    margin-bottom:32px;
+}
 
 .contact-item{
     grid-template-columns:1fr;
